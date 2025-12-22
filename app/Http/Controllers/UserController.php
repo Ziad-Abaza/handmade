@@ -14,6 +14,7 @@ use Illuminate\Foundation\Auth\Access\AuthorizesRequests;
 use Illuminate\Support\Str;
 use Exception;
 use App\Notifications\AccountVerificationNotification;
+use Google\Client as GoogleClient;
 
 class UserController extends Controller
 {
@@ -290,8 +291,60 @@ class UserController extends Controller
         } catch (\Exception $e) {
             return response()->json(
                 ['status' => false, 'message' => 'Internal Server Error'],
-                Response::HTTP_INTERNAL_SERVER_ERROR
             );
+        }
+    }
+
+    /*
+    |==========================================
+    |> Google Login
+    |==========================================
+    */
+    public function googleLogin(Request $request)
+    {
+        try {
+            $validator = Validator::make($request->all(), [
+                'id_token' => 'required|string',
+            ]);
+
+            if ($validator->fails()) {
+                return response()->json(['status' => false, 'errors' => $validator->errors()], Response::HTTP_UNPROCESSABLE_ENTITY);
+            }
+
+            $client = new GoogleClient(['client_id' => env('GOOGLE_CLIENT_ID')]);
+            $payload = $client->verifyIdToken($request->id_token);
+
+            if ($payload) {
+                $email = $payload['email'];
+                $name = $payload['name'] ?? explode('@', $email)[0];
+                
+                $user = User::where('email', $email)->first();
+
+                if (!$user) {
+                    $user = User::create([
+                        'name' => $name,
+                        'email' => $email,
+                        'password' => Hash::make(Str::random(24)),
+                        'is_verified' => true,
+                        'is_active' => true,
+                        'role' => 'user',
+                    ]);
+                    
+                    // Optional: Download profile picture from $payload['picture']
+                }
+
+                return response()->json([
+                    'status' => true,
+                    'data' => [
+                        'user' => new UserResource($user),
+                        'token' => $user->createToken('auth_token')->plainTextToken,
+                    ],
+                ]);
+            } else {
+                return response()->json(['status' => false, 'message' => 'Invalid Google ID token'], Response::HTTP_UNAUTHORIZED);
+            }
+        } catch (Exception $e) {
+            return response()->json(['status' => false, 'message' => $e->getMessage()], Response::HTTP_INTERNAL_SERVER_ERROR);
         }
     }
 }

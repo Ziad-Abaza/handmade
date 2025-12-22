@@ -29,6 +29,7 @@ use App\Http\Controllers\UserController;
 // Auth Routes
 Route::post('/register', [UserController::class, 'register'])->name('register');
 Route::post('/login', [UserController::class, 'login'])->name('login');
+Route::post('/auth/google', [UserController::class, 'googleLogin'])->name('auth.google');
 
 /*
 |===================================================================
