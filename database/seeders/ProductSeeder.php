@@ -63,6 +63,20 @@ class ProductSeeder extends Seeder
             ['name' => 'Live Edge Coffee Table', 'desc' => 'Natural wood slab table with steel hairpin legs.', 'cat' => 'Woodworking', 'vendor' => 'Oak & Iron Woodworking', 'img' => 'https://images.unsplash.com/photo-1532372320572-cda25653a26d?w=800'],
             ['name' => 'Wooden Wall Clock', 'desc' => 'Minimalist design made from cherry wood.', 'cat' => 'Woodworking', 'vendor' => 'Oak & Iron Woodworking', 'img' => 'https://images.unsplash.com/photo-1563861826100-9cb868fdbe1c?w=800'],
 
+            // --- Clothing (Pure Silk Textiles) ---
+            ['name' => 'Cotton Summer Dress', 'desc' => 'Lightweight breathable organic cotton dress.', 'cat' => 'Clothing', 'vendor' => 'Pure Silk Textiles', 'img' => 'https://images.unsplash.com/photo-1572804013309-59a88b7e92f1?auto=format&fit=crop&q=80&w=800'],
+            ['name' => 'Classic White T-Shirt', 'desc' => 'Premium heavy-weight cotton t-shirt for daily wear.', 'cat' => 'Clothing', 'vendor' => 'Pure Silk Textiles', 'img' => 'https://images.unsplash.com/photo-1521572267360-ee0c2909d518?auto=format&fit=crop&q=80&w=800'],
+            ['name' => 'Denim Jacket', 'desc' => 'Vintage style denim jacket with reinforced stitching.', 'cat' => 'Clothing', 'vendor' => 'Pure Silk Textiles', 'img' => 'https://images.unsplash.com/photo-1527010150264-7701553d83b5?auto=format&fit=crop&q=80&w=800'],
+            ['name' => 'Silk Evening Scarf', 'desc' => 'Luxury hand-dyed silk scarf with floral patterns.', 'cat' => 'Clothing', 'vendor' => 'Pure Silk Textiles', 'img' => 'https://images.unsplash.com/photo-1584992236310-6edddc08acff?auto=format&fit=crop&q=80&w=800'],
+            ['name' => 'Casual Linen Trousers', 'desc' => 'Relaxed fit linen trousers perfect for summer.', 'cat' => 'Clothing', 'vendor' => 'Pure Silk Textiles', 'img' => 'https://images.unsplash.com/photo-1594633312681-425c7b97ccd1?auto=format&fit=crop&q=80&w=800'],
+
+            // --- Books (Elite Electronics / General) ---
+            ['name' => 'The Art of Design', 'desc' => 'A comprehensive guide to modern minimalist aesthetics.', 'cat' => 'Books', 'vendor' => 'Elite Electronics', 'img' => 'https://images.unsplash.com/photo-1544947950-fa07a98d237f?auto=format&fit=crop&q=80&w=800'],
+            ['name' => 'Code Mastery 2024', 'desc' => 'Learn the latest programming paradigms and clean code.', 'cat' => 'Books', 'vendor' => 'Elite Electronics', 'img' => 'https://images.unsplash.com/photo-1512428559087-560fa5ceab42?auto=format&fit=crop&q=80&w=800'],
+            ['name' => 'Classic Poetry Collection', 'desc' => 'A beautifully bound book of timeless world poetry.', 'cat' => 'Books', 'vendor' => 'Golden Hour Jewelry', 'img' => 'https://images.unsplash.com/photo-1543003968-24069e731d6f?auto=format&fit=crop&q=80&w=800'],
+            ['name' => 'The Desert Cookery', 'desc' => 'Traditional recipes passed down through generations.', 'cat' => 'Books', 'vendor' => 'Desert Clay Pottery', 'img' => 'https://images.unsplash.com/photo-1506880018603-83d5b814b5a6?auto=format&fit=crop&q=80&w=800'],
+            ['name' => 'Handmade Living', 'desc' => 'How to craft a home with personality and soul.', 'cat' => 'Books', 'vendor' => 'Oak & Iron Woodworking', 'img' => 'https://images.unsplash.com/photo-1495446815901-a7297e633e8d?auto=format&fit=crop&q=80&w=800'],
+
             // --- Bath & Body (Organic Blooms & Oils) ---
             ['name' => 'Natural Lavender Soap', 'desc' => 'Cold-pressed soap with essential oils and dried lavender.', 'cat' => 'Natural Soaps', 'vendor' => 'Organic Blooms & Oils', 'img' => 'https://images.unsplash.com/photo-1600857062241-98e5dba7f214?w=800'],
             ['name' => 'Scented Soy Candle', 'desc' => 'Hand-poured candle with notes of sandalwood and vanilla.', 'cat' => 'Candles & Scents', 'vendor' => 'Organic Blooms & Oils', 'img' => 'https://images.unsplash.com/photo-1602874801007-bd458bb1b8b6?w=800'],
