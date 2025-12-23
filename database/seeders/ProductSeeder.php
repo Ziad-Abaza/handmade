@@ -36,8 +36,8 @@ class ProductSeeder extends Seeder
             ['name' => '4K Action Camera', 'desc' => 'Waterproof camera for your outdoor adventures.', 'cat' => 'Electronics', 'vendor' => 'Elite Electronics', 'img' => 'https://images.unsplash.com/photo-1526170375885-4d8ecf77b99f?w=800'],
 
             // --- Ceramics & Pottery (Desert Clay Pottery) ---
-            ['name' => 'Minimalist Ceramic Vase', 'desc' => 'Elegant hand-thrown ceramic vase for modern homes.', 'cat' => 'Ceramics & Pottery', 'vendor' => 'Desert Clay Pottery', 'img' => 'https://images.unsplash.com/photo-1578749553370-4bc3b1669562?w=800'],
-            ['name' => 'Artisan Coffee Mug', 'desc' => 'Large handmade mug with unique blue glaze.', 'cat' => 'Ceramics & Pottery', 'vendor' => 'Desert Clay Pottery', 'img' => 'https://images.unsplash.com/photo-1514228742587-6b1558fbed20?w=800'],
+            ['name' => 'Minimalist Ceramic Vase', 'desc' => 'Elegant hand-thrown ceramic vase for modern homes.', 'cat' => 'Ceramics & Pottery', 'vendor' => 'Desert Clay Pottery', 'img' => 'https://tse2.mm.bing.net/th/id/OIP.3-rHHVOdjZnZehOqSXz7RwHaHa?cb=ucfimg2&ucfimg=1&rs=1&pid=ImgDetMain&o=7&rm=3'],
+            ['name' => 'Artisan Coffee Mug', 'desc' => 'Large handmade mug with unique blue glaze.', 'cat' => 'Ceramics & Pottery', 'vendor' => 'Desert Clay Pottery', 'img' => 'https://tse3.mm.bing.net/th/id/OIP.NblIurNlE0Fa6LexHxfSQgHaHa?cb=ucfimg2&ucfimg=1&rs=1&pid=ImgDetMain&o=7&rm=3'],
             ['name' => 'Speckled Pasta Bowls', 'desc' => 'Set of 4 hand-glazed stoneware bowls.', 'cat' => 'Ceramics & Pottery', 'vendor' => 'Desert Clay Pottery', 'img' => 'https://images.unsplash.com/photo-1610701596007-11502861dcfa?w=800'],
             ['name' => 'Terracotta Planter', 'desc' => 'Breathable clay pot perfect for indoor succulents.', 'cat' => 'Ceramics & Pottery', 'vendor' => 'Desert Clay Pottery', 'img' => 'https://images.unsplash.com/photo-1485955900006-10f4d324d411?w=800'],
             ['name' => 'Handmade Serving Platter', 'desc' => 'Unique oval platter with rustic edges.', 'cat' => 'Ceramics & Pottery', 'vendor' => 'Desert Clay Pottery', 'img' => 'https://images.unsplash.com/photo-1574362848149-11496d93a7c7?w=800'],
@@ -52,7 +52,7 @@ class ProductSeeder extends Seeder
             // --- Textiles & Weaving (Pure Silk Textiles) ---
             ['name' => 'Handwoven Wool Rug', 'desc' => 'Traditional geometric patterns woven with 100% organic wool.', 'cat' => 'Textiles & Weaving', 'vendor' => 'Pure Silk Textiles', 'img' => 'https://tse2.mm.bing.net/th/id/OIP.zPeBfx52TtFo1glIeMINSgHaHa?cb=ucfimg2&ucfimg=1&rs=1&pid=ImgDetMain&o=7&rm=3'],
             ['name' => 'Boho Wall Hanging', 'desc' => 'Large macrame wall art for a bohemian home style.', 'cat' => 'Textiles & Weaving', 'vendor' => 'Pure Silk Textiles', 'img' => 'https://images.unsplash.com/photo-1528459801416-a9e53bbf4e17?w=800'],
-            ['name' => 'Indigo Dyed Table Runner', 'desc' => 'Natural indigo hand-dyed cotton runner.', 'cat' => 'Textiles & Weaving', 'vendor' => 'Pure Silk Textiles', 'img' => 'https://images.unsplash.com/photo-1616486332302-42bcaf2aa100?w=800'],
+            ['name' => 'Indigo Dyed Table Runner', 'desc' => 'Natural indigo hand-dyed cotton runner.', 'cat' => 'Textiles & Weaving', 'vendor' => 'Pure Silk Textiles', 'img' => 'https://tse2.mm.bing.net/th/id/OIP.Tj1g9cir07oZTm9m16hYxAHaHa?cb=ucfimg2&ucfimg=1&rs=1&pid=ImgDetMain&o=7&rm=3'],
             ['name' => 'Embroidered Throw Pillow', 'desc' => 'Soft linen pillow case with artisan embroidery.', 'cat' => 'Textiles & Weaving', 'vendor' => 'Pure Silk Textiles', 'img' => 'https://images.unsplash.com/photo-1584100936595-c0654b55a2e2?w=800'],
             ['name' => 'Linen Dinner Napkins', 'desc' => 'Set of 6 pre-washed organic linen napkins.', 'cat' => 'Textiles & Weaving', 'vendor' => 'Pure Silk Textiles', 'img' => 'https://images.unsplash.com/photo-1611270629569-8b357cb88da9?w=800'],
 
