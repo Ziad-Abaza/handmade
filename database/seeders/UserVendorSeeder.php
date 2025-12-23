@@ -15,19 +15,19 @@ class UserVendorSeeder extends Seeder
         $vendors = Vendor::pluck('id')->toArray();
 
         if (empty($users) || empty($vendors)) {
-            $this->command->info('No users or vendors found.');
+            $this->command->warn('No users or vendors found. Skipping UserVendorSeeder.');
             return;
         }
 
         $userVendorData = [];
 
-        foreach ($users as $user) {
-            $assignedVendors = array_rand($vendors, min(2, count($vendors)));
+        foreach ($users as $userId) {
+            $randomVendorIds = (array) array_rand(array_flip($vendors), min(2, count($vendors)));
 
-            foreach ((array) $assignedVendors as $vendorIndex) {
+            foreach ($randomVendorIds as $vendorId) {
                 $userVendorData[] = [
-                    'user_id' => $user,
-                    'vendor_id' => $vendors[$vendorIndex],
+                    'user_id' => $userId,
+                    'vendor_id' => $vendorId,
                     'created_at' => now(),
                     'updated_at' => now(),
                 ];

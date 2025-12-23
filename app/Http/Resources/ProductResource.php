@@ -15,6 +15,7 @@ class ProductResource extends JsonResource
             'average_rating' => $this->average_rating,
             'details' => ProductDetailResource::collection($this->whenLoaded('details')),
             'product_image' => $this->details->first()?->getImageUrl() ?? asset('images/product-placeholder.jpg'),
+            'media' => $this->details->first() ? $this->details->first()->getMedia('product_images')->map(fn($m) => $m->getUrl()) : [],
             'vendor' => new VendorResource($this->whenLoaded('vendor')),
             'region' => new RegionResource($this->whenLoaded('region')),
         ];
