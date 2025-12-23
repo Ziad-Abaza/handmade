@@ -14,6 +14,7 @@ class ProductResource extends JsonResource
             'description' => $this->description,
             'average_rating' => $this->average_rating,
             'details' => ProductDetailResource::collection($this->whenLoaded('details')),
+            'product_image' => $this->details->first()?->getImageUrl() ?? asset('images/product-placeholder.jpg'),
             'vendor' => new VendorResource($this->whenLoaded('vendor')),
             'region' => new RegionResource($this->whenLoaded('region')),
         ];

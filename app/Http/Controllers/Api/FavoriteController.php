@@ -5,6 +5,7 @@ namespace App\Http\Controllers\Api;
 use App\Http\Controllers\Controller;
 use App\Models\User;
 use App\Models\Product;
+use App\Http\Resources\ProductResource;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Auth;
 
@@ -61,11 +62,11 @@ class FavoriteController extends Controller
     public function index()
     {
         $user = Auth::user();
-        $favoriteProducts = $user->favorites;
+        $favoriteProducts = $user->favorites()->with(['details.media', 'vendor'])->get();
 
         return response()->json([
             'status' => true,
-            'data' => $favoriteProducts,
+            'data' => ProductResource::collection($favoriteProducts),
         ]);
     }
 
