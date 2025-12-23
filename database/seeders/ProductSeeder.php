@@ -26,7 +26,7 @@ class ProductSeeder extends Seeder
             ['name' => 'Premium Leather Wallet', 'desc' => 'Slim bifold wallet made from vegetable-tanned leather.', 'cat' => 'Leather Goods', 'vendor' => 'The Leather Lab', 'img' => 'https://images.unsplash.com/photo-1627123424574-724758594e93?w=800'],
             ['name' => 'Travel Leather Duffel', 'desc' => 'Spacious weekender bag made from premium cowhide.', 'cat' => 'Leather Goods', 'vendor' => 'The Leather Lab', 'img' => 'https://images.unsplash.com/photo-1553062407-98eeb64c6a62?w=800'],
             ['name' => 'Leather Journal Cover', 'desc' => 'Refillable leather cover for A5 notebooks.', 'cat' => 'Leather Goods', 'vendor' => 'The Leather Lab', 'img' => 'https://images.unsplash.com/photo-1544816155-12df9643f363?w=800'],
-            ['name' => 'Minimalist Leather Belt', 'desc' => 'Classic hand-stitched leather belt with brass buckle.', 'cat' => 'Leather Goods', 'vendor' => 'The Leather Lab', 'img' => 'https://images.unsplash.com/photo-1624222247344-550fb8ecfe31?w=800'],
+            ['name' => 'Minimalist Leather Belt', 'desc' => 'Classic hand-stitched leather belt with brass buckle.', 'cat' => 'Leather Goods', 'vendor' => 'The Leather Lab', 'img' => 'https://tse1.mm.bing.net/th/id/OIP.Ip9BfAf6Msbv7JbjAbxcVQHaI5?cb=ucfimg2&ucfimg=1&rs=1&pid=ImgDetMain&o=7&rm=3'],
 
             // --- Electronics (Elite Electronics) ---
             ['name' => 'Mechanical Gaming Keyboard', 'desc' => 'RGB backlit mechanical keyboard with blue switches.', 'cat' => 'Electronics', 'vendor' => 'Elite Electronics', 'img' => 'https://images.unsplash.com/photo-1511467687858-23d96c32e4ae?w=800'],
@@ -43,14 +43,14 @@ class ProductSeeder extends Seeder
             ['name' => 'Handmade Serving Platter', 'desc' => 'Unique oval platter with rustic edges.', 'cat' => 'Ceramics & Pottery', 'vendor' => 'Desert Clay Pottery', 'img' => 'https://images.unsplash.com/photo-1574362848149-11496d93a7c7?w=800'],
 
             // --- Handmade Jewelry (Golden Hour Jewelry) ---
-            ['name' => 'Silver Moon Earrings', 'desc' => 'Sterling silver earrings inspired by the night sky.', 'cat' => 'Handmade Jewelry', 'vendor' => 'Golden Hour Jewelry', 'img' => 'https://images.unsplash.com/photo-1535633302713-102a019a130d?w=800'],
+            ['name' => 'Silver Moon Earrings', 'desc' => 'Sterling silver earrings inspired by the night sky.', 'cat' => 'Handmade Jewelry', 'vendor' => 'Golden Hour Jewelry', 'img' => 'https://tse2.mm.bing.net/th/id/OIP.LpV51lVhkS4AYA-OSgBVcwHaHW?cb=ucfimg2&ucfimg=1&rs=1&pid=ImgDetMain&o=7&rm=3'],
             ['name' => 'Gold Plated Necklace', 'desc' => 'Minimalist gold chain with a delicate pendant.', 'cat' => 'Handmade Jewelry', 'vendor' => 'Golden Hour Jewelry', 'img' => 'https://images.unsplash.com/photo-1599643478518-a784e5dc4c8f?w=800'],
             ['name' => 'Turquoise Beaded Bracelet', 'desc' => 'Bohemian style bracelet with natural turquoise.', 'cat' => 'Handmade Jewelry', 'vendor' => 'Golden Hour Jewelry', 'img' => 'https://images.unsplash.com/photo-1611591437281-460bfbe1220a?w=800'],
             ['name' => 'Hammered Silver Ring', 'desc' => 'Hand-forged sterling silver band.', 'cat' => 'Handmade Jewelry', 'vendor' => 'Golden Hour Jewelry', 'img' => 'https://images.unsplash.com/photo-1605100804763-247f67b3557e?w=800'],
-            ['name' => 'Custom Name Pendant', 'desc' => 'Personalized 18k gold plated necklace.', 'cat' => 'Handmade Jewelry', 'vendor' => 'Golden Hour Jewelry', 'img' => 'https://images.unsplash.com/photo-1590548237214-411d3315a6b7?w=800'],
+            ['name' => 'Custom Name Pendant', 'desc' => 'Personalized 18k gold plated necklace.', 'cat' => 'Handmade Jewelry', 'vendor' => 'Golden Hour Jewelry', 'img' => 'https://tse1.mm.bing.net/th/id/OIP.pChJTCTZ7COx8SHwX5nWXgHaHa?cb=ucfimg2&ucfimg=1&rs=1&pid=ImgDetMain&o=7&rm=3'],
 
             // --- Textiles & Weaving (Pure Silk Textiles) ---
-            ['name' => 'Handwoven Wool Rug', 'desc' => 'Traditional geometric patterns woven with 100% organic wool.', 'cat' => 'Textiles & Weaving', 'vendor' => 'Pure Silk Textiles', 'img' => 'https://images.unsplash.com/photo-1534889156217-d34a45934b53?w=800'],
+            ['name' => 'Handwoven Wool Rug', 'desc' => 'Traditional geometric patterns woven with 100% organic wool.', 'cat' => 'Textiles & Weaving', 'vendor' => 'Pure Silk Textiles', 'img' => 'https://tse2.mm.bing.net/th/id/OIP.zPeBfx52TtFo1glIeMINSgHaHa?cb=ucfimg2&ucfimg=1&rs=1&pid=ImgDetMain&o=7&rm=3'],
             ['name' => 'Boho Wall Hanging', 'desc' => 'Large macrame wall art for a bohemian home style.', 'cat' => 'Textiles & Weaving', 'vendor' => 'Pure Silk Textiles', 'img' => 'https://images.unsplash.com/photo-1528459801416-a9e53bbf4e17?w=800'],
             ['name' => 'Indigo Dyed Table Runner', 'desc' => 'Natural indigo hand-dyed cotton runner.', 'cat' => 'Textiles & Weaving', 'vendor' => 'Pure Silk Textiles', 'img' => 'https://images.unsplash.com/photo-1616486332302-42bcaf2aa100?w=800'],
             ['name' => 'Embroidered Throw Pillow', 'desc' => 'Soft linen pillow case with artisan embroidery.', 'cat' => 'Textiles & Weaving', 'vendor' => 'Pure Silk Textiles', 'img' => 'https://images.unsplash.com/photo-1584100936595-c0654b55a2e2?w=800'],
@@ -67,7 +67,7 @@ class ProductSeeder extends Seeder
             ['name' => 'Natural Lavender Soap', 'desc' => 'Cold-pressed soap with essential oils and dried lavender.', 'cat' => 'Natural Soaps', 'vendor' => 'Organic Blooms & Oils', 'img' => 'https://images.unsplash.com/photo-1600857062241-98e5dba7f214?w=800'],
             ['name' => 'Scented Soy Candle', 'desc' => 'Hand-poured candle with notes of sandalwood and vanilla.', 'cat' => 'Candles & Scents', 'vendor' => 'Organic Blooms & Oils', 'img' => 'https://images.unsplash.com/photo-1602874801007-bd458bb1b8b6?w=800'],
             ['name' => 'Organic Face Cream', 'desc' => 'Natural moisturizer with aloe vera and vitamin E.', 'cat' => 'Bath & Body', 'vendor' => 'Organic Blooms & Oils', 'img' => 'https://images.unsplash.com/photo-1556228720-195a672e8a03?w=800'],
-            ['name' => 'Rosewater Facial Mist', 'desc' => 'Pure rose hydrosol for a refreshing skin boost.', 'cat' => 'Bath & Body', 'vendor' => 'Organic Blooms & Oils', 'img' => 'https://images.unsplash.com/photo-1590156221170-cc398d09a97d?w=800'],
+            ['name' => 'Rosewater Facial Mist', 'desc' => 'Pure rose hydrosol for a refreshing skin boost.', 'cat' => 'Bath & Body', 'vendor' => 'Organic Blooms & Oils', 'img' => 'https://img.freepik.com/premium-photo/photo-toning-rose-water-facial-mist_889056-4088.jpg'],
             ['name' => 'Himalayan Bath Salts', 'desc' => 'Relaxing soak with pink salts and essential oils.', 'cat' => 'Bath & Body', 'vendor' => 'Organic Blooms & Oils', 'img' => 'https://images.unsplash.com/photo-1560750588-73207b1ef5b8?w=800'],
         ];
 
