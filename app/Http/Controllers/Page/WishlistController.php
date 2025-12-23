@@ -25,7 +25,7 @@ class WishlistController extends Controller
     {
         $wishlists = Auth::user()->wishlists()
             ->withCount('items')
-            ->with(['items.product.media'])
+            ->with(['items.product.details.media'])
             ->latest()
             ->get();
 
@@ -96,7 +96,7 @@ class WishlistController extends Controller
     {
         $this->authorize('view', $wishlist);
 
-        $wishlist->load(['items.product.media', 'items.product.vendor']);
+        $wishlist->load(['items.product.details.media', 'items.product.vendor']);
         
         return response()->json([
             'success' => true,
@@ -335,7 +335,7 @@ class WishlistController extends Controller
 
         return Product::whereIn('category_id', $categoryIds)
             ->whereNotIn('id', $wishlist->items->pluck('product_id'))
-            ->with('media')
+            ->with('details.media')
             ->inRandomOrder()
             ->limit(4)
             ->get();

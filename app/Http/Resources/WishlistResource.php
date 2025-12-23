@@ -20,7 +20,7 @@ class WishlistResource extends JsonResource
             'is_default' => $this->is_default,
             'items_count' => $this->whenCounted('items', $this->items_count),
             'items' => $this->whenLoaded('items', function () {
-                return WishlistItemResource::collection($this->items->load('product.media'));
+                return WishlistItemResource::collection($this->items->load('product.details.media'));
             }),
             'created_at' => $this->created_at->format('Y-m-d H:i:s'),
             'updated_at' => $this->updated_at->format('Y-m-d H:i:s'),

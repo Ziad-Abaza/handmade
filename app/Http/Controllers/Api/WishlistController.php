@@ -58,7 +58,7 @@ class WishlistController extends Controller
     {
         $this->authorize('view', $wishlist);
 
-        $wishlist->load(['items.product.media']);
+        $wishlist->load(['items.product.details.media']);
         
         return response()->json([
             'success' => true,
@@ -225,7 +225,7 @@ class WishlistController extends Controller
     public function getDefaultWishlist(Request $request): JsonResponse
     {
         $wishlist = $request->user()->defaultWishlist();
-        $wishlist->load(['items.product.media']);
+        $wishlist->load(['items.product.details.media']);
         
         return response()->json([
             'success' => true,
